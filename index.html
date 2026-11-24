@@ -15,7 +15,7 @@
   <div class="page-shell">
     <header class="topbar">
       <a class="brand" href="#top" aria-label="처음으로"><span class="brand-mark">✳</span> SIDE QUEST <span class="brand-ko">취향의 지도</span></a>
-      <nav aria-label="페이지 메뉴"><a href="#map">지도 구경하기</a><a href="#note">만든 사람</a></nav>
+      <nav aria-label="페이지 메뉴"><a href="#stories">나의 이야기</a><a href="#map">취향 지도</a><a href="#note">소개</a></nav>
       <span class="edition">PERSONAL ARCHIVE · 2026</span>
     </header>
 
@@ -37,6 +37,14 @@
         <div class="hero-index"><span>MY LITTLE UNIVERSE</span><span>A MAP OF SMALL CURIOSITIES</span></div>
       </section>
 
+      <section class="story-section" id="stories" aria-labelledby="story-title">
+        <div class="story-heading"><div><p class="eyebrow">TWO TRAILS OF CURIOSITY</p><h2 id="story-title">좋아하는 것들이<br><em>이어지는 방식.</em></h2></div><p>하나를 좋아하면 그다음이 궁금해져요.<br>두 갈래의 이야기를 따라가 보세요.</p></div>
+        <div class="story-grid">
+          <article class="story-card story-race"><div class="story-top"><span>THE FAST LANE</span><span>01 / 자동차와 레이싱</span></div><div class="story-art race-art" aria-hidden="true"><span class="race-ring"></span><span class="race-number">01</span><span class="race-caption">FROM BRICKS<br>TO THE GRID</span></div><div class="story-content"><p class="story-tags">LEGO TECHNIC <span>·</span> F1 <span>·</span> SIM RACING</p><h3>조립하던 자동차가<br>달리기 시작했다.</h3><p>레고 테크닉 자동차를 조립하면서 빠른 차에 흥미가 생겼어요. F1을 챙겨 보다 보니 직접 달리고 싶어졌고, 결국 심레이싱 장비까지 들였습니다.</p><button class="story-button" type="button" data-start="film">이 이야기부터 탐험하기</button></div></article>
+          <article class="story-card story-math"><div class="story-top"><span>THE THINKING LANE</span><span>02 / 수학과 AI</span></div><div class="story-art math-art" aria-hidden="true"><span class="math-formula">f(x)<i> → </i>?</span><span class="math-orbit">✳</span><span class="math-caption">QUESTIONS<br>LEAD SOMEWHERE</span></div><div class="story-content"><p class="story-tags">MATH <span>·</span> AI <span>·</span> DIGITAL HEALTH</p><h3>풀고 싶은 문제는<br>계속 늘어나는 중.</h3><p>수학 문제와 이론을 공부하는 재미가 AI에 대한 관심으로 이어졌어요. 빠르게 변하는 기술이 궁금하면서도 앞으로의 공부와 일에 대해 고민합니다.</p><button class="story-button" type="button" data-start="walk">이 이야기부터 탐험하기</button></div></article>
+        </div>
+      </section>
+
       <section class="map-section" id="map">
         <div class="section-heading">
           <div><p class="eyebrow">THE CONNECTIONS</p><h2>관심사의 <em>샛길 지도</em></h2></div>
@@ -54,8 +62,8 @@
               <path d="M140 105 C92 174 104 237 145 264"/><path d="M145 264 C174 285 220 293 260 296"/>
             </svg>
             <button class="node node-film" data-node="film" style="--x:18.4%;--y:21%"><span class="node-icon">◉</span><span>레고 테크닉</span><small>자동차를 조립하다</small></button>
-            <button class="node node-writing" data-node="writing" style="--x:41.7%;--y:30.6%"><span class="node-icon">✎</span><span>F1</span><small>빠른 차의 세계</small></button>
-            <button class="node node-music" data-node="music" style="--x:67.9%;--y:25.4%"><span class="node-icon">♫</span><span>심레이싱</span><small>이번엔 내가 드라이버</small></button>
+            <button class="node node-writing" data-node="writing" style="--x:41.7%;--y:30.6%"><span class="node-icon">⚑</span><span>F1</span><small>빠른 차의 세계</small></button>
+            <button class="node node-music" data-node="music" style="--x:67.9%;--y:25.4%"><span class="node-icon">◉</span><span>심레이싱</span><small>이번엔 내가 드라이버</small></button>
             <button class="node node-walk" data-node="walk" style="--x:19.1%;--y:52.8%"><span class="node-icon">⌁</span><span>수학</span><small>문제와 이론의 재미</small></button>
             <button class="node node-camera" data-node="camera" style="--x:34.2%;--y:59.2%"><span class="node-icon">▧</span><span>AI</span><small>빠르게 변하는 세상</small></button>
             <button class="node node-making" data-node="making" style="--x:59.9%;--y:55.6%"><span class="node-icon">✳</span><span>롤과 사람들</span><small>함께하면 더 재밌어</small></button>
@@ -73,9 +81,9 @@
               <h3>마음 가는 원을<br>하나 골라주세요.</h3>
               <p class="card-description">가까운 관심사부터 연결을 따라가며 이 작은 지도를 탐험할 수 있어요.</p>
             </div>
-            <div class="path-box"><span class="path-label">지금까지 걸어온 길</span><div id="path-list" class="path-list">아직 출발 전이에요</div></div>
-            <div class="card-actions"><button class="primary-button" id="next-button" disabled>다음 샛길 찾기</button><button class="reset-button" id="reset-button">처음으로</button></div>
-            <p class="algorithm-note"><span class="algorithm-dot"></span> <b>BFS</b>가 가장 가까운 연결부터 찾아요</p>
+            <div class="path-box"><span class="path-label">지금까지 살펴본 순서</span><div id="path-list" class="path-list">아직 출발 전이에요</div></div>
+            <div class="explore-detail" id="explore-detail">출발점을 선택하면 거리와 연결을 보여줘요.</div><div class="card-actions"><button class="primary-button" id="next-button" disabled>다음 샛길 찾기</button><button class="reset-button" id="reset-button">처음으로</button></div>
+            <p class="algorithm-note"><span class="algorithm-dot"></span> <b>BFS</b>가 출발점에서 연결 수가 적은 순서로 찾아요</p>
           </aside>
         </div>
       </section>
