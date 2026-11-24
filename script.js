@@ -1,13 +1,13 @@
 const topics = {
-  film: { title: '오래된 영화', kicker: 'SCENES I KEEP', text: '엔딩 크레딧이 올라간 뒤에도 한동안 자리를 뜨지 못하는 영화를 좋아해요. 마음에 남은 장면은 짧은 문장으로 적어둡니다.', symbol: '◉' },
-  writing: { title: '메모와 문장', kicker: 'WORDS IN THE MARGIN', text: '흘러가는 생각을 붙잡아두는 작은 메모들. 한 문장이 다른 생각을 불러오곤 해요.', symbol: '✎' },
-  music: { title: '밤의 음악', kicker: 'SOUNDTRACK FOR A WALK', text: '저녁 산책의 속도와 잘 맞는 음악을 모아요. 같은 길도 어떤 노래와 걷느냐에 따라 다르게 기억됩니다.', symbol: '♫' },
-  walk: { title: '동네 산책', kicker: 'THE LONG WAY HOME', text: '목적지를 정하지 않고 걷다가 낯선 간판이나 작은 가게를 발견하는 걸 좋아해요.', symbol: '⌁' },
-  camera: { title: '빛의 기록', kicker: 'LIGHT, HELD STILL', text: '특별한 순간보다 평범한 오후의 빛을 찍어둡니다. 사진은 나중에 기억을 여는 작은 문이 돼요.', symbol: '▧' },
-  making: { title: '작은 만들기', kicker: 'IDEAS, MADE TANGIBLE', text: '머릿속에만 있던 아이디어를 화면이나 종이 위에 꺼내보는 일. 생각보다 만드는 과정에서 더 많은 걸 배워요.', symbol: '✳' },
-  coffee: { title: '커피와 장소', kicker: 'A TABLE BY THE WINDOW', text: '오래 머물고 싶은 공간에는 저마다의 리듬이 있어요. 창가 자리, 잔의 온기, 느린 오후를 기억합니다.', symbol: '⌂' },
-  reading: { title: '책의 여백', kicker: 'DOG-EARED PAGES', text: '책을 읽을 때 밑줄과 접힌 모서리가 늘어납니다. 다른 사람의 문장에서 내 생각을 발견하는 순간이 좋아요.', symbol: '▤' },
-  collect: { title: '수집하는 마음', kicker: 'POCKET-SIZED MEMORIES', text: '영수증, 포장지, 이름 모를 작은 조각들. 버리지 않고 모아둔 것들이 예상치 못한 이야기를 들려줍니다.', symbol: '◇' }
+  film: { title: '레고 테크닉', kicker: 'WHERE IT ALL STARTED', text: '레고 테크닉 자동차를 조립하다 빠른 차에 관심이 생겼어요. 작은 부품을 하나씩 맞추다 보니 관심사까지 조립됐습니다.', symbol: '◉' },
+  writing: { title: 'F1', kicker: 'LIGHTS OUT AND AWAY WE GO', text: '빠른 자동차에 빠져 F1을 챙겨 보기 시작했어요. 보다 보니 직접 달려보고 싶어졌고, 그다음 코너는 심레이싱이었습니다.', symbol: '✎' },
+  music: { title: '심레이싱', kicker: 'MY VIRTUAL COCKPIT', text: 'F1을 보다가 직접 달리고 싶어 심레이싱 장비까지 샀어요. 열심히 달리는 중입니다. 현실의 운전 실력과는 별개일지도요.', symbol: '♫' },
+  walk: { title: '수학', kicker: 'ONE MORE PROBLEM', text: '수학 문제를 풀고 이론을 공부하는 게 재미있어요. 좋아하는 수학을 따라가다 보니 자연스럽게 AI 공부에도 관심이 생겼습니다.', symbol: '⌁' },
+  camera: { title: 'AI', kicker: 'CURIOUS ABOUT WHAT IS NEXT', text: '요즘 가장 관심 있는 건 AI의 발전 속도예요. 놀라움과 기대가 크지만, 앞으로의 공부와 취업은 어떻게 달라질지 걱정도 됩니다.', symbol: '▧' },
+  making: { title: '롤과 사람들', kicker: 'BETTER TOGETHER', text: '여자친구와 친구들과 함께 롤을 하기도 해요. 좋아하는 사람들과 웃고 떠드는 시간이 제 일상에 꼭 필요합니다.', symbol: '✳' },
+  coffee: { title: '유튜브', kicker: 'JUST ONE MORE VIDEO', text: '유튜브 보는 걸 좋아해요. 흥미로운 영상을 하나 보다 보면 어느새 다음 영상이 기다리고 있습니다.', symbol: '⌂' },
+  reading: { title: '디지털헬스케어', kicker: 'MY FIELD OF STUDY', text: '서울대학교 첨단융합학부에서 디지털헬스케어를 전공하고 있어요. 수학과 AI에 대한 관심을 품고 배움을 이어가는 중입니다.', symbol: '▤' },
+  collect: { title: '좋아하는 시간', kicker: 'OFF THE SCREEN', text: '배드민턴과 수영을 좋아하고, 고기도 좋아해요. 옛날 발라드를 부르는 것도 좋아합니다. 노래 실력은… 마음만큼은 진심이에요.', symbol: '◇' }
 };
 
 // 이 인접 목록이 사이트 속 관심사 그래프를 이룹니다.
