@@ -100,7 +100,7 @@ function showNext() {
   }
 }
 
-const pathEdges = [[0,1],[1,2],[1,5],[0,4],[4,5],[5,6],[5,8],[4,7],[7,8],[2,6],[0,3],[3,4]];
+const pathEdges = [[0,1],[1,2],[1,5],[4,5],[5,6],[5,8],[4,7],[7,8],[2,6],[0,3],[3,4]];
 nodes.forEach(node => node.addEventListener('click', () => startAt(node.dataset.node)));
 nextButton.addEventListener('click', showNext);
 resetButton.addEventListener('click', () => {
