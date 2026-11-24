@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f1e8">
+  <meta name="description" content="관심사 사이를 산책하며 한 사람의 생각을 발견하는 작은 지도.">
+  <title>취향의 연결 지도 — 작은 생각의 지도</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="처음으로"><span class="brand-mark">✳</span> SIDE QUEST <span class="brand-ko">취향의 지도</span></a>
+      <nav aria-label="페이지 메뉴"><a href="#map">지도 구경하기</a><a href="#note">만든 사람</a></nav>
+      <span class="edition">PERSONAL ARCHIVE · 2026</span>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="live-dot"></span> 열려 있는 생각들, 천천히 둘러보기</p>
+          <h1>나는 이런저런 것들 사이를<br><span>자주 샛길로 걷는다.</span></h1>
+          <p class="intro">하나의 관심사는 꼭 다른 관심사로 이어져요.<br>아래 지도를 눌러, 생각이 어디까지 흘러가는지 구경해보세요.</p>
+          <a class="text-link" href="#map">지도 펼쳐보기</a>
+        </div>
+        <div class="hero-art" aria-label="관심사가 서로 연결된 추상적인 지도">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <span class="spark s1">✳</span><span class="spark s2">✳</span><span class="spark s3">✳</span>
+          <div class="planet"><span>생각은<br>연결된다</span><i></i></div>
+          <div class="orbit-label label-a">curiosity</div><div class="orbit-label label-b">little things matter</div>
+          <div class="art-sticker">NO<br>STRAIGHT<br>LINES</div>
+        </div>
+        <div class="hero-index"><span>01 / 03</span><span>A MAP OF SMALL CURIOSITIES</span></div>
+      </section>
+
+      <section class="map-section" id="map">
+        <div class="section-heading">
+          <div><p class="eyebrow">THE CONNECTIONS</p><h2>관심사의 <em>샛길 지도</em></h2></div>
+          <p class="section-note">동그라미를 눌러 시작해보세요.<br>가까운 생각부터 차례로 찾아갈게요.</p>
+        </div>
+        <div class="map-layout">
+          <div class="map-board" aria-label="관심사 연결 지도">
+            <div class="board-grid"></div>
+            <svg class="connections" viewBox="0 0 760 500" aria-hidden="true">
+              <path d="M140 105 C220 78 250 130 317 153"/><path d="M317 153 C386 178 430 100 516 127"/>
+              <path d="M317 153 C350 230 393 251 455 278"/><path d="M140 105 C145 205 204 238 260 296"/>
+              <path d="M260 296 C314 347 367 344 455 278"/><path d="M455 278 C535 251 560 191 625 197"/>
+              <path d="M455 278 C488 366 554 392 610 378"/><path d="M260 296 C256 379 309 418 358 430"/>
+              <path d="M358 430 C453 455 526 423 610 378"/><path d="M516 127 C563 142 584 168 625 197"/>
+              <path d="M140 105 C92 174 104 237 145 264"/><path d="M145 264 C174 285 220 293 260 296"/>
+            </svg>
+            <button class="node node-film" data-node="film" style="--x:18.4%;--y:21%"><span class="node-icon">◉</span><span>오래된 영화</span><small>장면을 모으는 일</small></button>
+            <button class="node node-writing" data-node="writing" style="--x:41.7%;--y:30.6%"><span class="node-icon">✎</span><span>메모와 문장</span><small>생각을 붙잡아두기</small></button>
+            <button class="node node-music" data-node="music" style="--x:67.9%;--y:25.4%"><span class="node-icon">♫</span><span>밤의 음악</span><small>걷는 속도의 플레이리스트</small></button>
+            <button class="node node-walk" data-node="walk" style="--x:19.1%;--y:52.8%"><span class="node-icon">⌁</span><span>동네 산책</span><small>목적 없이 발견하기</small></button>
+            <button class="node node-camera" data-node="camera" style="--x:34.2%;--y:59.2%"><span class="node-icon">▧</span><span>빛의 기록</span><small>사진 한 장의 온도</small></button>
+            <button class="node node-making" data-node="making" style="--x:59.9%;--y:55.6%"><span class="node-icon">✳</span><span>작은 만들기</span><small>아이디어를 화면으로</small></button>
+            <button class="node node-coffee" data-node="coffee" style="--x:82.2%;--y:39.4%"><span class="node-icon">⌂</span><span>커피와 장소</span><small>오래 머물고 싶은 곳</small></button>
+            <button class="node node-reading" data-node="reading" style="--x:47.1%;--y:86%"><span class="node-icon">▤</span><span>책의 여백</span><small>밑줄과 접힌 모서리</small></button>
+            <button class="node node-collect" data-node="collect" style="--x:80.3%;--y:76%"><span class="node-icon">◇</span><span>수집하는 마음</span><small>버리지 못한 작은 조각</small></button>
+            <div class="map-compass">N<br><span>✳</span></div>
+            <div class="map-legend"><span class="legend-line"></span> 생각이 이어지는 길</div>
+          </div>
+          <aside class="explore-card" aria-live="polite">
+            <div class="card-top"><span class="card-label">YOUR NEXT SIDE QUEST</span><span class="card-count" id="visit-count">0/9</span></div>
+            <div class="card-content" id="card-content">
+              <div class="card-symbol">?</div>
+              <p class="card-kicker">어디서 시작할까요?</p>
+              <h3>마음 가는 원을<br>하나 골라주세요.</h3>
+              <p class="card-description">가까운 관심사부터 연결을 따라가며 이 작은 지도를 탐험할 수 있어요.</p>
+            </div>
+            <div class="path-box"><span class="path-label">지금까지 걸어온 길</span><div id="path-list" class="path-list">아직 출발 전이에요</div></div>
+            <div class="card-actions"><button class="primary-button" id="next-button" disabled>다음 샛길 찾기</button><button class="reset-button" id="reset-button">처음으로</button></div>
+            <p class="algorithm-note"><span class="algorithm-dot"></span> <b>BFS</b>가 가장 가까운 연결부터 찾아요</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="note-section" id="note">
+        <div class="note-label"><span>02 / A SMALL NOTE</span><span>ABOUT THIS PLACE</span></div>
+        <div class="note-body"><p class="eyebrow">만든 사람의 작은 소개</p><h2>좋아하는 것들을 따라가다 보면<br>조금씩 <em>나를 알게 되니까.</em></h2><p>이 지도에는 영화, 산책, 메모처럼 샘플 관심사와 설명이 들어 있어요. 각 주제와 소개를 나의 경험으로 바꾸면, 좋아하는 것들이 이어지는 나만의 아카이브가 됩니다.</p></div>
+        <div class="note-doodle" aria-hidden="true"><span>keep<br>looking<br>closely</span><b>✳</b></div>
+      </section>
+    </main>
+    <footer><a class="brand" href="#top"><span class="brand-mark">✳</span> SIDE QUEST</a><span>made of little things & late-night thoughts</span><a href="#top" class="back-top">맨 위로 ↑</a></footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
